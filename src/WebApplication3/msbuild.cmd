@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 if not defined MSBUILDLOGPATH (
-    set MSBUILDLOGPATH="D:\MSBuildLogs"
+    set MSBUILDLOGPATH="%~dp0BuildLogOutput"
 )
 
 if not defined MSBUILD_CUSTOM_PATH (
