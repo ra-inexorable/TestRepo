@@ -19,6 +19,15 @@ if not defined BASEOUTPUT_PATH (
 	call MKDIR "%~dp0BuildOutPut" 
 )
 
+if not defined NUGETRESTORECMD (
+	set NUGETRESTORECMD=nuget.exe restore WebApplication3.sln
+)
+
+echo.
+echo ** Restoring nuget packages
+call %NUGETRESTORECMD%
+echo.
+
 echo %MSBUILD_ARGS%
 
 :: Add a the file logger with diagnostic verbosity to the msbuild args
