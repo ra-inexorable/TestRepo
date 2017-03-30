@@ -6,7 +6,7 @@ if not defined MSBUILDLOGPATH (
 )
 
 if not defined MSBUILDCUSTOMPATH (
-    set MSBUILDCUSTOMPATH="C:\MSBuild\14.0\Bin\MSBuild.exe"
+    set MSBUILDCUSTOMPATH="MSBuild.exe"
 )
 
 if not defined MSBUILD_ARGS (
