@@ -20,7 +20,7 @@ if not defined BASEOUTPUT_PATH (
 )
 
 if not defined NUGETRESTORECMD (
-	set NUGETRESTORECMD=nuget.exe restore WebApplication3.sln
+	set NUGETRESTORECMD=nuget.exe restore %~dp0WebApplication3.sln
 )
 
 echo.
