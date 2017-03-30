@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
+
 if not defined MSBUILDLOGPATH (
     set MSBUILDLOGPATH="D:\MSBuildLogs"
 )
